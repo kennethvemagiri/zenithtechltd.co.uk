@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Corai — Your Personal GPT | Build what's next</title>
+  <meta name="description" content="Corai is your personal GPT. Technology that moves forward." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#" class="logo" aria-label="Corai home">
+        <!-- Logo placeholder: replace with <img> when ready -->
+        <span class="logo-wordmark">Corai</span>
+      </a>
+      <nav class="nav">
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#products">Products</a>
+        <a href="#careers">Careers</a>
+        <a href="#why">Why Corai</a>
+        <a href="#contact" class="nav-cta">Get in Touch</a>
+      </nav>
+      <button type="button" class="menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <p class="hero-label">Tech startup</p>
+        <h1 class="hero-title">
+          We Build<br />
+          <span class="hero-title-accent">You</span>r's<br />
+          <span class="hero-title-accent">what's next.</span>
+        </h1>
+        <p class="hero-desc">
+          Technology that moves forward. Products that matter.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Get free! Rebuild.</a>
+          <a href="#about" class="btn btn-ghost">Learn more</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="grid-pattern" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section id="about" class="section section-about">
+      <div class="section-inner">
+        <h2 class="section-label">About us</h2>
+        <h3 class="section-title">We're here to build.</h3>
+        <p class="section-text">
+          Zenith Tech is a tech startup focused on building software and products that push boundaries. We combine clarity, craft, and ambition—no fluff, just forward motion.
+        </p>
+      </div>
+    </section>
+
+    <section id="work" class="section section-work">
+      <div class="section-inner">
+        <h2 class="section-label">What we do</h2>
+        <h3 class="section-title">Focus areas</h3>
+        <ul class="focus-list">
+          <li>
+            <span class="focus-num">01</span>
+            <h4>Rebuild</h4>
+            <p>Reimagine your business for the AI era—from idea to launch, we design and build products that scale.</p>
+          </li>
+          <li>
+            <span class="focus-num">02</span>
+            <h4>Corai (Your Personal GPT)</h4>
+            <p>Build your own ecosystem: modern stack, clean architecture, and systems that put you in control.</p>
+          </li>
+          <li>
+            <span class="focus-num">03</span>
+            <h4>Take control of everything</h4>
+            <p>Document and analyse your business and mission; act on the data so you own the playbook—and stay ahead of the curve.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-cta">
+      <div class="section-inner cta-inner">
+        <h2 class="section-title cta-title">Ready to build something?</h2>
+        <p class="section-text cta-text">Let's talk about your next project.</p>
+        <a href="mailto:hello@zenithtech.io" class="btn btn-primary btn-large">hello@zenithtech.io</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a href="#" class="logo logo-footer">
+        <span class="logo-wordmark">Corai</span>
+      </a>
+      <p class="footer-copy">&copy; <span id="year"></span> Zenith Tech Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.querySelector('.menu-toggle').addEventListener('click', function () {
+      document.body.classList.toggle('nav-open');
+    });
+  </script>
+</body>
+</html>
